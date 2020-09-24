@@ -1,6 +1,67 @@
-$color: red;
+$font1: 'Gotham Bold', 'Gotham Rounded Light';
+$font2: 'Helvetica Neue Light', 'Helvetica Neue Medium', 'Helvetica Neue Bold';
+$reddish: #d35266;
+$grey: #888;
+$black: #383838;
 
-body {
-  background-color: $color;
-  font-size: 50px;
+// Navigation Bar //
+
+.navbar {
+  justify-content: center;
+  align-items: center;
+  background-color: $black;
+  width: 100%;
+  font-family: $font2;
+  padding: 5px;
+
+  .logo {
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  div {
+    @media (min-width: 768px) {
+      font-size: 0.8rem;
+      padding: 5px 10px;
+    }
+
+    font-size: 0.6rem;
+    padding: 5px;
+
+    a {
+      color: $grey;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $reddish;
+    }
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.ad {
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: $reddish;
+  padding: 7px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+// Main Banner
+
+.main-banner {
+  background-color: $reddish;
 }

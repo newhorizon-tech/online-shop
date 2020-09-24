@@ -1,5 +1,42 @@
-body {
-  background-color: red;
-  font-size: 50px; }
+.navbar {
+  justify-content: center;
+  align-items: center;
+  background-color: #383838;
+  width: 100%;
+  font-family: "Helvetica Neue Light", "Helvetica Neue Medium", "Helvetica Neue Bold";
+  padding: 5px; }
+  .navbar .logo {
+    color: #fff;
+    font-size: 1rem; }
+  .navbar div {
+    font-size: 0.6rem;
+    padding: 5px; }
+    @media (min-width: 768px) {
+      .navbar div {
+        font-size: 0.8rem;
+        padding: 5px 10px; } }
+    .navbar div a {
+      color: #888; }
+    .navbar div a:hover {
+      text-decoration: none;
+      color: #d35266; }
+  .navbar .navbar-nav {
+    flex-direction: row; }
+  .navbar li {
+    padding-left: 5px;
+    padding-right: 5px; }
+
+.ad {
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #d35266;
+  padding: 7px; }
+  @media (max-width: 768px) {
+    .ad {
+      display: none; } }
+
+.main-banner {
+  background-color: #d35266; }
 
 /*# sourceMappingURL=style.css.map */
