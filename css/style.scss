@@ -3,9 +3,7 @@ $font2: 'Helvetica Neue Light', 'Helvetica Neue Medium', 'Helvetica Neue Bold';
 $reddish: #d35266;
 $grey: #888;
 $black: #383838;
-
 // Navigation Bar //
-
 .navbar {
   justify-content: center;
   align-items: center;
@@ -59,9 +57,87 @@ $black: #383838;
     display: none;
   }
 }
-
 // Main Banner
-
 .main-banner {
+  padding: 5% 0;
   background-color: $reddish;
+  font-family: $font2;
+  font-size: 0.8rem;
+
+  h2 {
+    color: #fff;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 95%;
+    text-transform: capitalize;
+  }
+
+  button {
+    background-color: $black;
+    color: $grey;
+    padding: 0.25rem;
+    border: none;
+    height: calc(1.5em + 0.75rem + 2px);
+  }
+
+  .dropdown-toggle::after {
+    color: green;
+  }
+
+  .form-control {
+    font-size: 0.7rem;
+    border-radius: 0;
+    border: none;
+    padding: 5px;
+  }
+
+  .form-inline {
+    width: 60%;
+  }
+}
+
+.banner-heading {
+  padding: 2% 0;
+}
+// Hot Ads
+
+.hot-ads {
+  width: 70%;
+  margin: 1% auto;
+}
+
+.carousel {
+  img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: auto;
+  }
+
+  .carousel-control-prev {
+    left: -40px;
+  }
+
+  .carousel-control-next {
+    right: -40px;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    border: 1px solid $grey;
+    border-radius: 50%;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
 }
