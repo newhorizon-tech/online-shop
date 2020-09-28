@@ -3,6 +3,10 @@ $font2: 'Helvetica Neue Light', 'Helvetica Neue Medium', 'Helvetica Neue Bold';
 $reddish: #d35266;
 $grey: #888;
 $black: #383838;
+
+body {
+  background-color: #f6f6f6;
+}
 // Navigation Bar //
 .navbar {
   justify-content: center;
@@ -103,41 +107,65 @@ $black: #383838;
 }
 // Hot Ads
 
-.hot-ads {
+.main-heading {
   width: 70%;
-  margin: 1% auto;
+  margin: 0 auto;
 }
 
-.carousel {
-  img {
-    height: 300px;
-    width: 300px;
+.hot-ads {
+  background-color: #fff;
+  width: 100%;
+  padding: 1% 0;
+
+  .ad-content {
+    width: 50%;
+    margin: 0 auto;
   }
 
-  .carousel-control-next,
-  .carousel-control-prev {
-    width: auto;
+  #main-carousel {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1% 0;
   }
 
-  .carousel-control-prev {
-    left: -40px;
+  .carousel {
+    img {
+      height: 300px;
+      width: 300px;
+    }
   }
+}
 
-  .carousel-control-next {
-    right: -40px;
-  }
+.carousel-control-next,
+.carousel-control-prev {
+  width: auto;
+}
 
-  .carousel-control-next-icon,
-  .carousel-control-prev-icon {
-    border: 1px solid $grey;
-    border-radius: 50%;
-  }
+.carousel-control-prev {
+  left: -40px;
+}
 
-  .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-  }
+.carousel-control-next {
+  right: -40px;
+}
 
-  .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-  }
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+// Categories
+
+.categories {
+  width: 60%;
+  padding: 1%;
+  margin: 0 auto;
 }
