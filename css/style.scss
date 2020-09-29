@@ -59,15 +59,12 @@ body {
 }
 
 .ad {
+  display: none;
   border: none;
   border-radius: 4px;
   color: #fff;
   background-color: $reddish;
   padding: 7px;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
 }
 // Main Banner
 .main-banner {
@@ -122,6 +119,12 @@ body {
   color: $grey;
 }
 
+#main-carousel {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1% 0;
+}
+
 .hot-ads {
   background-color: #fff;
   width: 100%;
@@ -142,12 +145,6 @@ body {
 
   .ad-item {
     flex-direction: column;
-  }
-
-  #main-carousel {
-    width: 70%;
-    margin: 0 auto;
-    padding: 1% 0;
   }
 
   .carousel {
@@ -204,6 +201,10 @@ body {
     ----------------------
 */
 @media (min-width: 768px) {
+  .ad {
+    display: initial;
+  }
+
   .hot-ads {
     .ad-item {
       flex-direction: row;

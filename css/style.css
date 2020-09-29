@@ -36,14 +36,12 @@ body {
     padding-right: 5px; }
 
 .ad {
+  display: none;
   border: none;
   border-radius: 4px;
   color: #fff;
   background-color: #d35266;
   padding: 7px; }
-  @media (max-width: 768px) {
-    .ad {
-      display: none; } }
 
 .main-banner {
   padding: 5% 0;
@@ -81,6 +79,11 @@ body {
   margin: 0 auto;
   color: #888; }
 
+#main-carousel {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1% 0; }
+
 .hot-ads {
   background-color: #fff;
   width: 100%;
@@ -94,10 +97,6 @@ body {
     font-size: 0.6em; }
   .hot-ads .ad-item {
     flex-direction: column; }
-  .hot-ads #main-carousel {
-    width: 70%;
-    margin: 0 auto;
-    padding: 1% 0; }
   .hot-ads .carousel img {
     height: 300px;
     width: 300px; }
@@ -136,6 +135,9 @@ body {
     ----------------------
 */
 @media (min-width: 768px) {
+  .ad {
+    display: initial; }
+
   .hot-ads .ad-item {
     flex-direction: row; }
   .hot-ads .ad-content {
