@@ -6,7 +6,15 @@ $black: #383838;
 
 body {
   background-color: #f6f6f6;
+  font-family: $font2;
 }
+
+.btn-red {
+  color: #fff;
+  background-color: $reddish;
+  border-color: $reddish;
+}
+
 // Navigation Bar //
 .navbar {
   justify-content: center;
@@ -68,11 +76,12 @@ body {
   font-family: $font2;
   font-size: 0.8rem;
 
-  h2 {
+  h1 {
     color: #fff;
+    font-size: 4em;
   }
 
-  h3 {
+  h2 {
     color: #fff;
     font-size: 95%;
     text-transform: capitalize;
@@ -110,6 +119,7 @@ body {
 .main-heading {
   width: 70%;
   margin: 0 auto;
+  color: $grey;
 }
 
 .hot-ads {
@@ -117,9 +127,21 @@ body {
   width: 100%;
   padding: 1% 0;
 
-  .ad-content {
-    width: 50%;
-    margin: 0 auto;
+  .grey-field {
+    color: $grey;
+    font-weight: bold;
+  }
+
+  .banner-purchase {
+    margin-top: 5%;
+  }
+
+  .h2 {
+    font-size: 0.6em;
+  }
+
+  .ad-item {
+    flex-direction: column;
   }
 
   #main-carousel {
@@ -135,6 +157,8 @@ body {
     }
   }
 }
+
+// Carousel Arrows
 
 .carousel-control-next,
 .carousel-control-prev {
@@ -168,4 +192,25 @@ body {
   width: 60%;
   padding: 1%;
   margin: 0 auto;
+}
+
+.category {
+  margin: 5% 0;
+}
+
+/*
+    ----------------------
+      Media Query 768px
+    ----------------------
+*/
+@media (min-width: 768px) {
+  .hot-ads {
+    .ad-item {
+      flex-direction: row;
+    }
+
+    .ad-content {
+      padding: 0 4%;
+    }
+  }
 }

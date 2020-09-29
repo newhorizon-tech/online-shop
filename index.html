@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cake Shop</title>
+  <title>BakeShop</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c665918476.js" crossorigin="anonymous"></script>
@@ -26,8 +26,8 @@
   <main>
     <section class="main-banner d-flex flex-column align-items-center">
       <div class="banner-heading d-flex flex-column align-items-center pt-3 pb-4">
-        <h2> CakeShop </h2>
-        <h3> Buying and selling has never been easier! </h3>
+        <h1> BakeShop </h1>
+        <h2> Buying and selling has never been easier! </h2>
       </div>
       <form action="https://www.w3docs.com/" class="form-inline">
         <select class="form-control col-lg-3 col-md-3 col-sm-12">
@@ -44,9 +44,15 @@
       </form>
     </section>
     <section class="hot-ads">
-      <h2 class="main-heading">Hot Ads</h2>
-      <div id="main-carousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+      <h3 class="main-heading">Hot Ads</h3>
+      <div id="main-carousel" class="carousel slide">
+        <a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+        <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
             <div class="ad-item d-flex">
               <img class="img-fluid" src="./img/red-velvet-cake.jpg" alt="...">
@@ -54,8 +60,15 @@
                 <h2> Red Velvet Cake </h2>
                 <p>Red velvet cake has an acidic taste that comes from the use of buttermilk and vinegar as well as the cream cheese in the frosting. The acidity is balanced out by the sweetness of the cake itself. It also has cocoa powder added to
                   it for a mild chocolate flavoring.</p>
-                <p> By John Doe</p>
-                <button class="btn btn-primary"> <span class="material-icons">shopping_cart</span> Purchase Details </button>
+                <div>
+                  <span class="grey-field">By:</span>
+                  <span>John Doe</span>
+                </div>
+                <div>
+                  <span class="grey-field">Location:</span>
+                  <span>New York</span>
+                </div>
+                <div class="banner-purchase"><button class="btn btn-red"> <span class="material-icons">shopping_cart</span> Purchase Details </button></div>
               </div>
             </div>
           </div>
@@ -66,8 +79,15 @@
                 <h2> Red Velvet Cake 2 </h2>
                 <p>Red velvet cake has an acidic taste that comes from the use of buttermilk and vinegar as well as the cream cheese in the frosting. The acidity is balanced out by the sweetness of the cake itself. It also has cocoa powder added to
                   it for a mild chocolate flavoring.</p>
-                <p> By John Doe</p>
-                <button class="btn btn-primary"> <span class="material-icons">shopping_cart</span> Purchase Details </button>
+                <div>
+                  <span class="grey-field">By:</span>
+                  <span>John Doe</span>
+                </div>
+                <div>
+                  <span class="grey-field">Location:</span>
+                  <span>New York</span>
+                </div>
+                <div class="banner-purchase"><button class="btn btn-red"> <span class="material-icons">shopping_cart</span> Purchase Details </button></div>
               </div>
             </div>
           </div>
@@ -78,121 +98,297 @@
                 <h2> Red Velvet Cake 3 </h2>
                 <p>Red velvet cake has an acidic taste that comes from the use of buttermilk and vinegar as well as the cream cheese in the frosting. The acidity is balanced out by the sweetness of the cake itself. It also has cocoa powder added to
                   it for a mild chocolate flavoring.</p>
-                <p> By John Doe</p>
-                <button class="btn btn-primary"> <span class="material-icons">shopping_cart</span> Purchase Details </button>
+                <div>
+                  <span class="grey-field">By:</span>
+                  <span>John Doe</span>
+                </div>
+                <div>
+                  <span class="grey-field">Location:</span>
+                  <span>New York</span>
+                </div>
+                <div class="banner-purchase"><button class="btn btn-red"> <span class="material-icons">shopping_cart</span> Purchase Details </button></div>
               </div>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
       </div>
     </section>
     <section class="categories">
       <div class="category">
         <h3>Pastries</h3>
         <span>Different types of pastries</span>
-      </div>
-      <!--Category Carousel-->
-      <div id="category-carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
-        <!--Controls-->
-        <a class="carousel-control-prev" href="#category-carousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#category-carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-          <!--First slide-->
-          <div class="carousel-item active">
+        <!--Category Carousel-->
+        <div id="category-carousel" class="carousel slide carousel-multi-item">
+          <!--Controls-->
+          <a class="carousel-control-prev" href="#category-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#category-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
 
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
-                  <div class="card-body">
-                    <h4 class="card-title">Pastry 1</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim optio dolores, architecto esse doloribus asperiores.</p>
-                    <a class="btn btn-primary">Buy</a>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Pastry 1</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim optio dolores, architecto esse doloribus asperiores.</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Pastry 2</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, illo sunt nesciunt vero odio cum.</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Pastry 3</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci placeat vel in, beatae id, dolorem?</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-4 clearfix d-none d-md-block">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
-                  <div class="card-body">
-                    <h4 class="card-title">Pastry 2</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, illo sunt nesciunt vero odio cum.</p>
-                    <a class="btn btn-primary">Buy</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 clearfix d-none d-md-block">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
-                  <div class="card-body">
-                    <h4 class="card-title">Pastry 3</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci placeat vel in, beatae id, dolorem?</p>
-                    <a class="btn btn-primary">Buy</a>
-                  </div>
-                </div>
-              </div>
             </div>
+            <!--Second slide-->
+            <div class="carousel-item">
 
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Pastry 4</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim optio dolores, architecto esse doloribus asperiores.</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Pastry 5</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, illo sunt nesciunt vero odio cum.</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Pastry 6</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci placeat vel in, beatae id, dolorem?</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
-          <!--Second slide-->
-          <div class="carousel-item">
+        </div>
+      </div>
+      <div class="category">
+        <h3>Breads</h3>
+        <span>Different types of bread based food items</span>
+        <!--Category Carousel-->
+        <div id="category-carousel-2" class="carousel slide carousel-multi-item">
+          <!--Controls-->
+          <a class="carousel-control-prev" href="#category-carousel-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#category-carousel-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
 
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
-                  <div class="card-body">
-                    <h4 class="card-title">Pastry 4</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim optio dolores, architecto esse doloribus asperiores.</p>
-                    <a class="btn btn-primary">Buy</a>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/choclate-crossiant.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Croissant 1</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim optio dolores, architecto esse doloribus asperiores.</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/choclate-crossiant.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Croissant 2</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, illo sunt nesciunt vero odio cum.</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/choclate-crossiant.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Croissant 3</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci placeat vel in, beatae id, dolorem?</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-4 clearfix d-none d-md-block">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
-                  <div class="card-body">
-                    <h4 class="card-title">Pastry 5</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, illo sunt nesciunt vero odio cum.</p>
-                    <a class="btn btn-primary">Buy</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 clearfix d-none d-md-block">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
-                  <div class="card-body">
-                    <h4 class="card-title">Pastry 6</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci placeat vel in, beatae id, dolorem?</p>
-                    <a class="btn btn-primary">Buy</a>
-                  </div>
-                </div>
-              </div>
             </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/choclate-crossiant.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Croissant 4</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim optio dolores, architecto esse doloribus asperiores.</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/choclate-crossiant.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Crossiant 5</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, illo sunt nesciunt vero odio cum.</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
 
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/choclate-crossiant.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Crossiant 6</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci placeat vel in, beatae id, dolorem?</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
 
-
     </section>
 
   </main>
+
+  <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="logo"> &#127874;CakeShop</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate laboriosam, odit aperiam praesentium officia animi!</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#">BakeShop</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
   <!-- Bootstrap scripts -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>

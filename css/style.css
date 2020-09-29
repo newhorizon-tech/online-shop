@@ -1,5 +1,11 @@
 body {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  font-family: "Helvetica Neue Light", "Helvetica Neue Medium", "Helvetica Neue Bold"; }
+
+.btn-red {
+  color: #fff;
+  background-color: #d35266;
+  border-color: #d35266; }
 
 .navbar {
   justify-content: center;
@@ -44,9 +50,10 @@ body {
   background-color: #d35266;
   font-family: "Helvetica Neue Light", "Helvetica Neue Medium", "Helvetica Neue Bold";
   font-size: 0.8rem; }
+  .main-banner h1 {
+    color: #fff;
+    font-size: 4em; }
   .main-banner h2 {
-    color: #fff; }
-  .main-banner h3 {
     color: #fff;
     font-size: 95%;
     text-transform: capitalize; }
@@ -71,15 +78,22 @@ body {
 
 .main-heading {
   width: 70%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #888; }
 
 .hot-ads {
   background-color: #fff;
   width: 100%;
   padding: 1% 0; }
-  .hot-ads .ad-content {
-    width: 50%;
-    margin: 0 auto; }
+  .hot-ads .grey-field {
+    color: #888;
+    font-weight: bold; }
+  .hot-ads .banner-purchase {
+    margin-top: 5%; }
+  .hot-ads .h2 {
+    font-size: 0.6em; }
+  .hot-ads .ad-item {
+    flex-direction: column; }
   .hot-ads #main-carousel {
     width: 70%;
     margin: 0 auto;
@@ -112,5 +126,19 @@ body {
   width: 60%;
   padding: 1%;
   margin: 0 auto; }
+
+.category {
+  margin: 5% 0; }
+
+/*
+    ----------------------
+      Media Query 768px
+    ----------------------
+*/
+@media (min-width: 768px) {
+  .hot-ads .ad-item {
+    flex-direction: row; }
+  .hot-ads .ad-content {
+    padding: 0 4%; } }
 
 /*# sourceMappingURL=style.css.map */
