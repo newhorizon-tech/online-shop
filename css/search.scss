@@ -7,6 +7,7 @@ $black: #383838;
 body {
   background-color: #f6f6f6;
   font-family: $font2;
+  color: $black;
 }
 
 .btn-red {
@@ -105,7 +106,6 @@ body {
 
   .form-inline {
     width: 70%;
-    max-width: 768px;
   }
 }
 
@@ -113,7 +113,16 @@ body {
 
 .filters {
   display: none;
-  width: 20%;
+  padding: 3% 3%;
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.filter-type {
+  padding: 8% 0;
 }
 
 .checkbox-title {
@@ -124,20 +133,29 @@ body {
 
 .results {
   margin: 0 auto;
+  padding: 3% 1%;
+}
+
+.result-message {
+  font-size: 0.8rem;
+}
+
+.card-text {
+  color: $black;
+}
+
+.highlight {
+  font-weight: bold;
 }
 
 .result-items {
   padding: 2% 0;
   display: grid;
-  grid-gap: 2%;
+  grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
 
   .card {
     width: 100%;
-    padding: 0;
-  }
-
-  .card-body {
     padding: 0;
   }
 
@@ -147,7 +165,9 @@ body {
 }
 // Footer
 
-footer {
+.page-footer {
+  margin-top: 3%;
+  padding-top: 1%;
   background-color: white;
 
   p,
@@ -189,7 +209,7 @@ a:hover {
     }
 
     .form-inline {
-      width: 766px;
+      width: 85%;
     }
   }
 
@@ -199,6 +219,10 @@ a:hover {
   }
 
   // Main Content
+
+  .result-message {
+    font-size: 1rem;
+  }
 
   .result-items {
     padding: 2% 0;
