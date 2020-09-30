@@ -1,0 +1,139 @@
+$font1: 'Gotham Bold', 'Gotham Rounded Light';
+$font2: 'Helvetica Neue Light', 'Helvetica Neue Medium', 'Helvetica Neue Bold';
+$reddish: #d35266;
+$grey: #888;
+$black: #383838;
+
+body {
+  background-color: #f6f6f6;
+  font-family: $font2;
+}
+
+.btn-red {
+  color: #fff;
+  background-color: $reddish;
+  border-color: $reddish;
+}
+
+// Navigation Bar //
+.navbar {
+  justify-content: center;
+  align-items: center;
+  background-color: $black;
+  width: 100%;
+  font-family: $font2;
+  padding: 5px;
+
+  .logo {
+    color: #fff;
+    font-size: 1.4rem;
+  }
+
+  div {
+    font-size: 0.6rem;
+    padding: 5px;
+
+    a {
+      color: $grey;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $reddish;
+    }
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.ad {
+  display: none;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: $reddish;
+  padding: 7px;
+}
+// Main Banner
+.main-banner {
+  align-items: center;
+  padding: 1% 0;
+  background-color: $reddish;
+  font-family: $font2;
+  font-size: 0.8rem;
+
+  .banner-heading {
+    align-items: center;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 2em;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 1em;
+    text-transform: capitalize;
+  }
+
+  button {
+    background-color: $black;
+    color: $grey;
+    padding: 0.25rem;
+    border: none;
+    height: calc(1.5em + 0.75rem + 2px);
+  }
+
+  .dropdown-toggle::after {
+    color: green;
+  }
+
+  .form-control {
+    font-size: 0.7rem;
+    border-radius: 0;
+    border: none;
+    padding: 5px;
+  }
+
+  .form-inline {
+    width: 70%;
+    max-width: 768px;
+  }
+}
+
+/*
+    ----------------------
+      Media Query 768px
+    ----------------------
+*/
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: flex-start;
+
+    div {
+      font-size: 0.8rem;
+      padding: 0 4%;
+    }
+  }
+
+  .main-banner {
+    padding-left: 4%;
+    align-items: flex-start;
+
+    .banner-heading {
+      align-items: flex-start;
+    }
+
+    .form-inline {
+      width: 766px;
+    }
+  }
+}

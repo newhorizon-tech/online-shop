@@ -1,0 +1,94 @@
+body {
+  background-color: #f6f6f6;
+  font-family: "Helvetica Neue Light", "Helvetica Neue Medium", "Helvetica Neue Bold"; }
+
+.btn-red {
+  color: #fff;
+  background-color: #d35266;
+  border-color: #d35266; }
+
+.navbar {
+  justify-content: center;
+  align-items: center;
+  background-color: #383838;
+  width: 100%;
+  font-family: "Helvetica Neue Light", "Helvetica Neue Medium", "Helvetica Neue Bold";
+  padding: 5px; }
+  .navbar .logo {
+    color: #fff;
+    font-size: 1.4rem; }
+  .navbar div {
+    font-size: 0.6rem;
+    padding: 5px; }
+    .navbar div a {
+      color: #888; }
+    .navbar div a:hover {
+      text-decoration: none;
+      color: #d35266; }
+  .navbar .navbar-nav {
+    flex-direction: row; }
+  .navbar li {
+    padding-left: 5px;
+    padding-right: 5px; }
+
+.ad {
+  display: none;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #d35266;
+  padding: 7px; }
+
+.main-banner {
+  align-items: center;
+  padding: 1% 0;
+  background-color: #d35266;
+  font-family: "Helvetica Neue Light", "Helvetica Neue Medium", "Helvetica Neue Bold";
+  font-size: 0.8rem; }
+  .main-banner .banner-heading {
+    align-items: center; }
+  .main-banner h1 {
+    color: #fff;
+    font-size: 2em; }
+  .main-banner h2 {
+    color: #fff;
+    font-size: 1em;
+    text-transform: capitalize; }
+  .main-banner button {
+    background-color: #383838;
+    color: #888;
+    padding: 0.25rem;
+    border: none;
+    height: calc(1.5em + 0.75rem + 2px); }
+  .main-banner .dropdown-toggle::after {
+    color: green; }
+  .main-banner .form-control {
+    font-size: 0.7rem;
+    border-radius: 0;
+    border: none;
+    padding: 5px; }
+  .main-banner .form-inline {
+    width: 70%;
+    max-width: 768px; }
+
+/*
+    ----------------------
+      Media Query 768px
+    ----------------------
+*/
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: flex-start; }
+    .navbar div {
+      font-size: 0.8rem;
+      padding: 0 4%; }
+
+  .main-banner {
+    padding-left: 4%;
+    align-items: flex-start; }
+    .main-banner .banner-heading {
+      align-items: flex-start; }
+    .main-banner .form-inline {
+      width: 766px; } }
+
+/*# sourceMappingURL=search.css.map */
