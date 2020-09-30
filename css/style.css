@@ -129,6 +129,13 @@ body {
 .category {
   margin: 5% 0; }
 
+footer p,
+footer a {
+  color: grey; }
+
+a:hover {
+  color: #d35266; }
+
 /*
     ----------------------
       Media Query 768px

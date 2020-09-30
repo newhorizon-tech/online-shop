@@ -194,6 +194,19 @@ body {
 .category {
   margin: 5% 0;
 }
+// Footer
+
+footer {
+  p,
+  a {
+    color: grey;
+  }
+}
+
+a:hover {
+  color: $reddish;
+}
+
 
 /*
     ----------------------
