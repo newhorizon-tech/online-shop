@@ -140,6 +140,7 @@ body {
 
   .hot-ad {
     flex-direction: column;
+    align-items: center;
   }
 
   .carousel {
@@ -192,6 +193,8 @@ body {
 // Footer
 
 footer {
+  background-color: white;
+
   p,
   a {
     color: grey;
@@ -216,7 +219,7 @@ a:hover {
   }
 
   .ad {
-    display: initial;
+    display: block;
   }
 
   .hot-ads {

@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/search.css">
   <script src="https://kit.fontawesome.com/c665918476.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -30,100 +29,207 @@
       </div>
       <form action="results.html" class="form-inline">
         <select class="form-control col-lg-3 col-md-3 col-sm-12">
-          <option selected>All Cakes</option>
-          <option value="1">Gluten Free Cakes</option>
-          <option value="2">Vegan Cakes</option>
+          <option selected>Cakes</option>
+          <option value="1">Pastries</option>
+          <option value="2">Donuts
+          </option>
         </select>
-
-
 
         <input class="form-control col-lg-4 col-md-4 col-sm-12" type="text" placeholder="What do you search for?">
         <input class="form-control col-lg-3 col-md-3 col-sm-12" type="text" placeholder="Location">
         <button class="form-control col-lg-2 col-md-2 col-sm-12" type="submit">Search</button>
       </form>
     </section>
+    <section class="main-content d-flex flex-row">
+      <section class="filters">
+        <div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="Checkbox1" value="1">
+            <label class="form-check-label" for="Checkbox1">Vegan</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="Checkbox2" value="2">
+            <label class="form-check-label" for="Checkbox2">Gluten Free</label>
+          </div>
+        </div>
+        <div class="filter-type">
+          <h5 class="checkbox-title">Flavor</h5>
+          <hr>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Checkbox3" value="1">
+            <label class="form-check-label" for="Checkbox3">Chocolate</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="Checkbox4" value="2">
+            <label class="form-check-label" for="Checkbox4">Strawberry</label>
+          </div>
+        </div>
+        <div class="filter-type">
+          <h5 class="checkbox-title">Weight</h5>
+          <hr>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Checkbox5" value="1">
+            <label class="form-check-label" for="Checkbox5">&lt; 500g</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Checkbox6" value="2">
+            <label class="form-check-label" for="Checkbox6">500g - 1kg</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Checkbox7" value="2">
+            <label class="form-check-label" for="Checkbox7">&gt; 1kg</label>
+          </div>
+        </div>
+        <div class="filter-type">
+          <h5 class="checkbox-title">Price</h5>
+          <hr>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Checkbox8" value="1">
+            <label class="form-check-label" for="Checkbox8"> $0 - $10</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Checkbox9" value="2">
+            <label class="form-check-label" for="Checkbox9">$10 - $25</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Checkbox10" value="2">
+            <label class="form-check-label" for="Checkbox10">$25 - $50</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Checkbox11" value="2">
+            <label class="form-check-label" for="Checkbox11"> &gt;$50</label>
+          </div>
+        </div>
+      </section>
+      <section class="results">
+        <div class="result-message"><span class="highlight">30</span> results for <span class="highlight">"Crossiants"</span> in category <span class="highlight">Bread</span> at location <span class="highlight">New York</span></div>
+        <div class="result-items">
+          <div class="result-item">
+            <div class="card container">
+              <img class="card-img" src="img/chocolate-croissant.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Crossiant 5</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, illo sunt nesciunt vero odio cum.</p>
+                <a class="btn btn-red">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="result-item">
+            <div class="card container">
+              <img class="card-img" src="img/chocolate-croissant.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Crossiant 5</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, illo sunt nesciunt vero odio cum.</p>
+                <a class="btn btn-red">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="result-item">
+            <div class="card container">
+              <img class="card-img" src="img/chocolate-croissant.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Crossiant 5</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, illo sunt nesciunt vero odio cum.</p>
+                <a class="btn btn-red">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="result-item">
+            <div class="card container">
+              <img class="card-img" src="img/chocolate-croissant.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Crossiant 5</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, illo sunt nesciunt vero odio cum.</p>
+                <a class="btn btn-red">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
   </main>
-</body>
+  <!-- Footer -->
+  <footer class="page-footer font-small pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="logo"> &#127874;BakeShop</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate laboriosam, odit aperiam praesentium officia animi!</p>
+
+        </div>
+        <!-- Grid column -->
 
 
-<footer class="page-footer font-small blue pt-4">
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
 
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
+          <!-- Links -->
+          <h5 class="text-uppercase">Categories</h5>
 
-    <!-- Grid row -->
-    <div class="row">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Cakes</a>
+            </li>
+            <li>
+              <a href="#!">Pastries</a>
+            </li>
+            <li>
+              <a href="#!">Bread</a>
+            </li>
+            <li>
+              <a href="#!">Donuts</a>
+            </li>
+          </ul>
 
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
+        </div>
+        <!-- Grid column -->
 
-        <!-- Content -->
-        <h5 class="logo"> &#127874;CakeShop</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate laboriosam, odit aperiam praesentium officia animi!</p>
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">Navigation</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Home</a>
+            </li>
+            <li>
+              <a href="#!">Sign In</a>
+            </li>
+            <li>
+              <a href="#!">Sign Up</a>
+            </li>
+            <li>
+              <a href="#!">FAQ</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
 
       </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Cakes</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Cake 1</a>
-          </li>
-          <li>
-            <a href="#!">Cake 2</a>
-          </li>
-          <li>
-            <a href="#!">Cake 3</a>
-          </li>
-          <li>
-            <a href="#!">Cake 4</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Pastries</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Pastry 1</a>
-          </li>
-          <li>
-            <a href="#!">Pastry 2</a>
-          </li>
-          <li>
-            <a href="#!">Pastry 3</a>
-          </li>
-          <li>
-            <a href="#!">Pastry 4</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
+      <!-- Grid row -->
 
     </div>
-    <!-- Grid row -->
+    <!-- Footer Links -->
 
-  </div>
-  <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#">BakeShop</a>
+    </div>
+    <!-- Copyright -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="#">BakeShop</a>
-  </div>
-  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
 
-</footer>
+</html>
