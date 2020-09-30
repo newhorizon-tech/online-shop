@@ -16,14 +16,10 @@ body {
   padding: 5px; }
   .navbar .logo {
     color: #fff;
-    font-size: 1rem; }
+    font-size: 1.4rem; }
   .navbar div {
     font-size: 0.6rem;
     padding: 5px; }
-    @media (min-width: 768px) {
-      .navbar div {
-        font-size: 0.8rem;
-        padding: 5px 10px; } }
     .navbar div a {
       color: #888; }
     .navbar div a:hover {
@@ -95,7 +91,7 @@ body {
     margin-top: 5%; }
   .hot-ads .h2 {
     font-size: 0.6em; }
-  .hot-ads .ad-item {
+  .hot-ads .hot-ad {
     flex-direction: column; }
   .hot-ads .carousel img {
     height: 300px;
@@ -142,12 +138,16 @@ a:hover {
     ----------------------
 */
 @media (min-width: 768px) {
+  .navbar div {
+    font-size: 0.8rem;
+    padding: 1% 3%; }
+
   .ad {
     display: initial; }
 
-  .hot-ads .ad-item {
+  .hot-ads .hot-ad {
     flex-direction: row; }
-  .hot-ads .ad-content {
+  .hot-ads .hot-ad-content {
     padding: 0 4%; } }
 
 /*# sourceMappingURL=style.css.map */
