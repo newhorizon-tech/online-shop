@@ -20,6 +20,15 @@ h5 {
   background-color: #d35266;
   border-color: #d35266; }
 
+footer {
+  background-color: white; }
+  footer p,
+  footer a {
+    color: grey; }
+
+a:hover {
+  color: #d35266; }
+
 .navbar {
   justify-content: center;
   align-items: center;
@@ -150,15 +159,6 @@ h5 {
 
 .category {
   margin: 5% 0; }
-
-footer {
-  background-color: white; }
-  footer p,
-  footer a {
-    color: grey; }
-
-a:hover {
-  color: #d35266; }
 
 /*
     ----------------------

@@ -30,6 +30,22 @@ h5 { font-family: $gotham; }
   background-color: $reddish;
   border-color: $reddish;
 }
+// Footer
+
+.page-footer {
+  margin-top: 3%;
+  padding-top: 1%;
+  background-color: white;
+
+  p,
+  a {
+    color: grey;
+  }
+}
+
+a:hover {
+  color: $reddish;
+}
 
 // Navigation Bar //
 .navbar {
@@ -185,23 +201,6 @@ h5 { font-family: $gotham; }
     display: none;
   }
 }
-// Footer
-
-.page-footer {
-  margin-top: 3%;
-  padding-top: 1%;
-  background-color: white;
-
-  p,
-  a {
-    color: grey;
-  }
-}
-
-a:hover {
-  color: $reddish;
-}
-
 
 /*
     ----------------------

@@ -20,6 +20,17 @@ h5 {
   background-color: #d35266;
   border-color: #d35266; }
 
+.page-footer {
+  margin-top: 3%;
+  padding-top: 1%;
+  background-color: white; }
+  .page-footer p,
+  .page-footer a {
+    color: grey; }
+
+a:hover {
+  color: #d35266; }
+
 .navbar {
   justify-content: center;
   align-items: center;
@@ -124,17 +135,6 @@ h5 {
     padding: 0; }
   .result-items .card-text {
     display: none; }
-
-.page-footer {
-  margin-top: 3%;
-  padding-top: 1%;
-  background-color: white; }
-  .page-footer p,
-  .page-footer a {
-    color: grey; }
-
-a:hover {
-  color: #d35266; }
 
 /*
     ----------------------

@@ -31,6 +31,21 @@ h5 { font-family: $gotham; }
   border-color: $reddish;
 }
 
+// Footer
+
+footer {
+  background-color: white;
+
+  p,
+  a {
+    color: grey;
+  }
+}
+
+a:hover {
+  color: $reddish;
+}
+
 // Navigation Bar //
 .navbar {
   justify-content: center;
@@ -223,20 +238,6 @@ h5 { font-family: $gotham; }
 
 .category {
   margin: 5% 0;
-}
-// Footer
-
-footer {
-  background-color: white;
-
-  p,
-  a {
-    color: grey;
-  }
-}
-
-a:hover {
-  color: $reddish;
 }
 
 /*
