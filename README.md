@@ -9,6 +9,7 @@
 
 - HTML
 - CSS
+- SASS/SCSS
 - Bootstrap
 - Font Awesome
 - Google Material Icons
@@ -31,7 +32,7 @@ The website layout is based on the [ZATTIX design concept](behance.net/gallery/2
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/newhorizon-tech/newsweek-homepage/issues).
+Feel free to check the [issues page](https://github.com/newhorizon-tech/online-shop/issues).
 
 ## Show your support
 
