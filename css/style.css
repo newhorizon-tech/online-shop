@@ -27,7 +27,8 @@ footer {
     color: grey; }
 
 a:hover {
-  color: #d35266; }
+  color: #d35266;
+  text-decoration: none; }
 
 .navbar {
   justify-content: center;

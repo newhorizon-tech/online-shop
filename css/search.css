@@ -29,6 +29,7 @@ h5 {
     color: grey; }
 
 a:hover {
+  text-decoration: none;
   color: #d35266; }
 
 .navbar {
