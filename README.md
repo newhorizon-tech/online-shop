@@ -1,4 +1,4 @@
-# online-shop (BakeShop)
+# BakeShop (online-shop)
 
 
 > The goal of the project was to create a well designed website for an online bakery using the principles of responsive web design   
