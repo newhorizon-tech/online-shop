@@ -3,13 +3,15 @@
 
 > The goal of the project was to create a well designed website for an online bakery using the principles of responsive web design   
 
+![screenshot](./img/app_screenshot.png)
+
 ## Built With
 
 - HTML
 - CSS
 - Bootstrap
 - Font Awesome
-- Google Material Icons 
+- Google Material Icons
 
 The website layout is based on the [ZATTIX design concept](behance.net/gallery/24796463/ZATTIX) by Mohammed Awad
 
