@@ -29,20 +29,25 @@ h5 {
   .navbar .nav-items {
     justify-content: center;
     align-items: center;
-    width: 60%; }
+    width: 100%; }
+    .navbar .nav-items .material-icons {
+      color: #888;
+      font-size: 0.8rem;
+      line-height: 0.8rem; }
+    .navbar .nav-items div {
+      line-height: 0.8rem;
+      font-size: 0.8rem;
+      padding: 1% 2%; }
+      .navbar .nav-items div a {
+        white-space: nowrap;
+        font-family: "GothamBold", "GothamRoundedLight";
+        color: #888; }
+      .navbar .nav-items div a:hover {
+        text-decoration: none;
+        color: #d35266; }
   .navbar .logo {
     color: #fff;
     font-size: 1.4rem; }
-  .navbar div {
-    font-size: 0.8rem;
-    padding: 1% 2%; }
-    .navbar div a {
-      white-space: nowrap;
-      font-family: "GothamBold", "GothamRoundedLight";
-      color: #888; }
-    .navbar div a:hover {
-      text-decoration: none;
-      color: #d35266; }
   .navbar .navbar-nav {
     flex-direction: row; }
   .navbar li {
@@ -163,6 +168,8 @@ a:hover {
 @media (min-width: 768px) {
   .navbar div {
     padding: 1% 2%; }
+  .navbar .nav-items {
+    width: 60%; }
 
   .ad {
     display: block; }

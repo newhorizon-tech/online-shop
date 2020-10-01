@@ -42,28 +42,35 @@ h5 { font-family: $gotham; }
   .nav-items {
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 100%;
+
+    .material-icons {
+      color: $grey;
+      font-size: 0.8rem;
+      line-height: 0.8rem;
+    }
+
+    div {
+      line-height: 0.8rem;
+      font-size: 0.8rem;
+      padding: 1% 2%;
+
+      a {
+        white-space: nowrap;
+        font-family: $gotham;
+        color: $grey;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: $reddish;
+      }
+    }
   }
 
   .logo {
     color: #fff;
     font-size: 1.4rem;
-  }
-
-  div {
-    font-size: 0.8rem;
-    padding: 1% 2%;
-
-    a {
-      white-space: nowrap;
-      font-family: $gotham;
-      color: $grey;
-    }
-
-    a:hover {
-      text-decoration: none;
-      color: $reddish;
-    }
   }
 
   .navbar-nav {
@@ -241,6 +248,10 @@ a:hover {
   .navbar {
     div {
       padding: 1% 2%;
+    }
+
+    .nav-items {
+      width: 60%;
     }
   }
 

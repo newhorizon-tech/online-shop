@@ -29,9 +29,14 @@ h5 {
   .navbar .logo {
     color: #fff;
     font-size: 1.4rem; }
-  .navbar div {
+  .navbar .material-icons {
+    color: #888;
     font-size: 0.8rem;
-    padding: 5px; }
+    line-height: 0.8rem; }
+  .navbar div {
+    line-height: 0.8rem;
+    font-size: 0.8rem;
+    padding: 0 2%; }
     .navbar div a {
       font-family: "GothamBold", "GothamRoundedLight";
       color: #888; }

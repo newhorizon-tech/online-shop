@@ -44,9 +44,16 @@ h5 { font-family: $gotham; }
     font-size: 1.4rem;
   }
 
-  div {
+  .material-icons {
+    color: $grey;
     font-size: 0.8rem;
-    padding: 5px;
+    line-height: 0.8rem;
+  }
+
+  div {
+    line-height: 0.8rem;
+    font-size: 0.8rem;
+    padding: 0 2%;
 
     a {
       font-family: $gotham;
