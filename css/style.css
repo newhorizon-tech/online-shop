@@ -1,6 +1,19 @@
+@font-face {
+  font-family: GothamBold;
+  src: url(../fonts/Gotham-Bold.otf); }
+@font-face {
+  font-family: GothamRoundedLight;
+  src: url(../fonts/Gotham-Bold.otf); }
 body {
   background-color: #f6f6f6;
   font-family: "Helvetica Neue Light", "Helvetica Neue Medium", "Helvetica Neue Bold"; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "GothamBold", "GothamRoundedLight"; }
 
 .btn-red {
   color: #fff;
@@ -12,15 +25,20 @@ body {
   align-items: center;
   background-color: #383838;
   width: 100%;
-  font-family: "Helvetica Neue Light", "Helvetica Neue Medium", "Helvetica Neue Bold";
   padding: 5px; }
+  .navbar .nav-items {
+    justify-content: center;
+    align-items: center;
+    width: 60%; }
   .navbar .logo {
     color: #fff;
     font-size: 1.4rem; }
   .navbar div {
-    font-size: 0.6rem;
-    padding: 5px; }
+    font-size: 0.8rem;
+    padding: 1% 2%; }
     .navbar div a {
+      white-space: nowrap;
+      font-family: "GothamBold", "GothamRoundedLight";
       color: #888; }
     .navbar div a:hover {
       text-decoration: none;
@@ -35,6 +53,7 @@ body {
   display: none;
   border: none;
   border-radius: 4px;
+  font-family: "GothamBold", "GothamRoundedLight";
   color: #fff;
   background-color: #d35266;
   padding: 7px; }
@@ -42,7 +61,6 @@ body {
 .main-banner {
   padding: 5% 0;
   background-color: #d35266;
-  font-family: "Helvetica Neue Light", "Helvetica Neue Medium", "Helvetica Neue Bold";
   font-size: 0.8rem; }
   .main-banner h1 {
     color: #fff;
@@ -84,6 +102,8 @@ body {
   background-color: #fff;
   width: 100%;
   padding: 1% 0; }
+  .hot-ads .hot-ad-content h2 {
+    color: #d35266; }
   .hot-ads .grey-field {
     color: #888;
     font-weight: bold; }
@@ -142,8 +162,7 @@ a:hover {
 */
 @media (min-width: 768px) {
   .navbar div {
-    font-size: 0.8rem;
-    padding: 1% 3%; }
+    padding: 1% 2%; }
 
   .ad {
     display: block; }

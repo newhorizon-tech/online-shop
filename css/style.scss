@@ -1,13 +1,29 @@
-$font1: 'Gotham Bold', 'Gotham Rounded Light';
-$font2: 'Helvetica Neue Light', 'Helvetica Neue Medium', 'Helvetica Neue Bold';
+@font-face {
+  font-family: GothamBold;
+  src: url(../fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+  font-family: GothamRoundedLight;
+  src: url(../fonts/Gotham-Bold.otf);
+}
+
+$gotham: 'GothamBold', 'GothamRoundedLight';
+$helvetica: 'Helvetica Neue Light', 'Helvetica Neue Medium', 'Helvetica Neue Bold';
 $reddish: #d35266;
 $grey: #888;
 $black: #383838;
 
 body {
   background-color: #f6f6f6;
-  font-family: $font2;
+  font-family: $helvetica;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 { font-family: $gotham; }
 
 .btn-red {
   color: #fff;
@@ -21,8 +37,13 @@ body {
   align-items: center;
   background-color: $black;
   width: 100%;
-  font-family: $font2;
   padding: 5px;
+
+  .nav-items {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
 
   .logo {
     color: #fff;
@@ -30,10 +51,12 @@ body {
   }
 
   div {
-    font-size: 0.6rem;
-    padding: 5px;
+    font-size: 0.8rem;
+    padding: 1% 2%;
 
     a {
+      white-space: nowrap;
+      font-family: $gotham;
       color: $grey;
     }
 
@@ -57,6 +80,7 @@ body {
   display: none;
   border: none;
   border-radius: 4px;
+  font-family: $gotham;
   color: #fff;
   background-color: $reddish;
   padding: 7px;
@@ -65,7 +89,6 @@ body {
 .main-banner {
   padding: 5% 0;
   background-color: $reddish;
-  font-family: $font2;
   font-size: 0.8rem;
 
   h1 {
@@ -124,6 +147,10 @@ body {
   background-color: #fff;
   width: 100%;
   padding: 1% 0;
+
+  .hot-ad-content h2 {
+    color: $reddish;
+  }
 
   .grey-field {
     color: $grey;
@@ -213,8 +240,7 @@ a:hover {
 @media (min-width: 768px) {
   .navbar {
     div {
-      font-size: 0.8rem;
-      padding: 1% 3%;
+      padding: 1% 2%;
     }
   }
 
