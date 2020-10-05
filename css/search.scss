@@ -173,6 +173,10 @@ a:hover {
 
 // Main Content
 
+.filters {
+  border-right: 1px solid $grey;
+}
+
 .results {
   width: 85%;
   margin: 0 auto;

@@ -114,6 +114,9 @@ a:hover {
 .checkbox-title {
   font-size: 1.1rem; }
 
+.filters {
+  border-right: 1px solid #888; }
+
 .results {
   width: 85%;
   margin: 0 auto;
