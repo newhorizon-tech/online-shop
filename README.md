@@ -13,8 +13,8 @@
 - Bootstrap
 - Font Awesome
 - Google Material Icons
+- Gotham Fonts
 
-The website layout is based on the [ZATTIX design concept](behance.net/gallery/24796463/ZATTIX) by Mohammed Awad
 
 ## Live Demo
 
@@ -27,6 +27,11 @@ The website layout is based on the [ZATTIX design concept](behance.net/gallery/2
 
 - Github: [@newhorizon-tech](https://github.com/newhorizon-tech)
 - Twitter: [@techintosh3](https://twitter.com/techintosh3)
+
+## Acknowledgement
+
+The website layout is based on the [ZATTIX design concept](behance.net/gallery/24796463/ZATTIX) by Mohammed Awad
+
 
 ## 🤝 Contributing
 
