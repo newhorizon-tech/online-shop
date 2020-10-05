@@ -1,0 +1,282 @@
+@font-face {
+  font-family: GothamBold;
+  src: url(../fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+  font-family: GothamRoundedLight;
+  src: url(../fonts/Gotham-Bold.otf);
+}
+
+$gotham: 'GothamBold', 'GothamRoundedLight';
+$helvetica: 'Helvetica Neue Light', 'Helvetica Neue Medium', 'Helvetica Neue Bold';
+$reddish: #d35266;
+$grey: #888;
+$black: #383838;
+
+body {
+  background-color: #f6f6f6;
+  font-family: $helvetica;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $gotham;
+  color: $grey;
+}
+
+.btn-red {
+  color: #fff;
+  background-color: $reddish;
+  border-color: $reddish;
+}
+
+// Footer
+
+footer {
+  background-color: white;
+
+  p,
+  a {
+    color: grey;
+  }
+}
+
+a:hover {
+  color: $reddish;
+  text-decoration: none;
+}
+
+// Navigation Bar //
+.navbar {
+  justify-content: center;
+  align-items: center;
+  background-color: $black;
+  width: 100%;
+  padding: 5px;
+
+  .nav-items {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .material-icons {
+      color: $grey;
+      font-size: 0.8rem;
+      line-height: 0.8rem;
+    }
+
+    div {
+      line-height: 0.8rem;
+      font-size: 0.8rem;
+      padding: 1% 2%;
+
+      a {
+        white-space: nowrap;
+        font-family: $gotham;
+        color: $grey;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: $reddish;
+      }
+    }
+  }
+
+  .logo {
+    color: #fff;
+    font-size: 1.4rem;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.ad {
+  display: none;
+  border: none;
+  border-radius: 4px;
+  font-family: $gotham;
+  color: #fff;
+  background-color: $reddish;
+  padding: 7px;
+}
+// Main Banner
+.main-banner {
+  padding: 5% 0;
+  background-color: $reddish;
+  font-size: 0.8rem;
+
+  h1 {
+    color: #fff;
+    font-size: 4em;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+
+  button {
+    background-color: $black;
+    color: $grey;
+    padding: 0.25rem;
+    border: none;
+    height: calc(1.5em + 0.75rem + 2px);
+  }
+
+  .dropdown-toggle::after {
+    color: green;
+  }
+
+  .form-control {
+    font-size: 1.2rem;
+    border-radius: 0;
+    border: none;
+    padding: 5px;
+  }
+
+  .form-inline {
+    width: 60%;
+  }
+}
+
+.banner-heading {
+  padding: 3% 0;
+}
+// Hot Ads
+
+.main-heading {
+  width: 70%;
+  margin: 0 auto;
+  color: $grey;
+}
+
+#main-carousel {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1% 0;
+}
+
+.hot-ads {
+  background-color: #fff;
+  width: 100%;
+  padding: 1% 0;
+
+  .hot-ad-content h2 {
+    color: $reddish;
+  }
+
+  .grey-field {
+    color: $grey;
+    font-weight: bold;
+  }
+
+  .banner-purchase {
+    margin-top: 5%;
+  }
+
+  .h2 {
+    font-size: 0.6em;
+  }
+
+  .hot-ad {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel {
+    img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+
+// Carousel Arrows
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: auto;
+}
+
+.carousel-control-prev {
+  left: -40px;
+}
+
+.carousel-control-next {
+  right: -40px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+// Categories
+
+.categories {
+  width: 60%;
+  padding: 1%;
+  margin: 0 auto;
+}
+
+.category {
+  margin: 5% 0;
+}
+
+/*
+    ----------------------
+      Media Query 768px
+    ----------------------
+*/
+@media (min-width: 768px) {
+  .navbar {
+    div {
+      padding: 1% 2%;
+    }
+
+    .nav-items {
+      width: 60%;
+    }
+  }
+
+  .ad {
+    display: block;
+  }
+
+  .hot-ads {
+    .hot-ad {
+      flex-direction: row;
+    }
+
+    .hot-ad-content {
+      padding: 0 4%;
+    }
+  }
+
+  .page-footer {
+    .container-fluid {
+      width: 75%;
+    }
+  }
+}

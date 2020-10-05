@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BakeShop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c665918476.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-inverse d-flex flex-column flex-md-row">
+      <div><a class="logo" href="#"> &#127874;BakeShop</a></div>
+      <div class="nav-items d-flex">
+        <div>
+          <span class="material-icons">home</span>
+          <a href="index.html">HOME</a>
+        </div>
+        <div>
+          <span class="material-icons">perm_media</span>
+          <a href="#">COLLECTIONS</a>
+        </div>
+        <div>
+          <span class="material-icons">shopping_cart</span>
+          <a href="#">MY CART</a>
+        </div>
+        <div>
+          <button class="ad">POST AN AD</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="main-banner d-flex flex-column align-items-center">
+      <div class="banner-heading d-flex flex-column align-items-center pt-3 pb-4">
+        <h1> BakeShop </h1>
+        <h2> Buying cakes has never been easier! </h2>
+      </div>
+      <form action="search.html" class="form-inline">
+        <select class="form-control col-lg-3 col-md-3 col-sm-12">
+          <option selected>Cakes</option>
+          <option value="1">Pastries</option>
+          <option value="2">Donuts</option>
+        </select>
+
+
+
+        <input class="form-control col-lg-4 col-md-4 col-sm-12" type="text" placeholder="What do you search for?">
+        <input class="form-control col-lg-3 col-md-3 col-sm-12" type="text" placeholder="Location">
+        <button class="form-control col-lg-2 col-md-2 col-sm-12" type="submit">Search</button>
+      </form>
+    </section>
+    <section class="hot-ads">
+      <h3 class="main-heading">Hot Ads</h3>
+      <div id="main-carousel" class="carousel slide carousel-multi-item" data-interval="false">
+        <a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+        <div class="carousel-inner" role="listbox">
+          <div class="row">
+            <div class="carousel-item active">
+              <div class="hot-ad container d-flex">
+                <img class="img-fluid" src="./img/red-velvet-cake.jpg" alt="...">
+                <div class="hot-ad-content d-flex flex-column">
+                  <h2> Red Velvet Cake </h2>
+                  <p>Red velvet cake has an acidic taste that comes from the use of buttermilk and vinegar as well as the cream cheese in the frosting. The acidity is balanced out by the sweetness of the cake itself. It also has cocoa powder added to
+                    it for a mild chocolate flavoring.</p>
+                  <div>
+                    <span class="grey-field">By:</span>
+                    <span>John Doe</span>
+                  </div>
+                  <div>
+                    <span class="grey-field">Location:</span>
+                    <span>New York</span>
+                  </div>
+                  <div class="banner-purchase"><button class="btn btn-red"> <span class="material-icons">shopping_cart</span> Purchase Details </button></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="hot-ad container d-flex">
+                <img src="./img/red-velvet-cake.jpg" alt="...">
+                <div class="hot-ad-content d-flex flex-column">
+                  <h2> Red Velvet Cake 2 </h2>
+                  <p>Red velvet cake has an acidic taste that comes from the use of buttermilk and vinegar as well as the cream cheese in the frosting. The acidity is balanced out by the sweetness of the cake itself. It also has cocoa powder added to
+                    it for a mild chocolate flavoring.</p>
+                  <div>
+                    <span class="grey-field">By:</span>
+                    <span>John Doe</span>
+                  </div>
+                  <div>
+                    <span class="grey-field">Location:</span>
+                    <span>New York</span>
+                  </div>
+                  <div class="banner-purchase"><button class="btn btn-red"> <span class="material-icons">shopping_cart</span> Purchase Details </button></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="hot-ad container d-flex">
+                <img src="./img/red-velvet-cake.jpg" alt="...">
+                <div class="hot-ad-content d-flex flex-column">
+                  <h2> Red Velvet Cake 3 </h2>
+                  <p>Red velvet cake has an acidic taste that comes from the use of buttermilk and vinegar as well as the cream cheese in the frosting. The acidity is balanced out by the sweetness of the cake itself. It also has cocoa powder added to
+                    it for a mild chocolate flavoring.</p>
+                  <div>
+                    <span class="grey-field">By:</span>
+                    <span>John Doe</span>
+                  </div>
+                  <div>
+                    <span class="grey-field">Location:</span>
+                    <span>New York</span>
+                  </div>
+                  <div class="banner-purchase"><button class="btn btn-red"> <span class="material-icons">shopping_cart</span> Purchase Details </button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="categories">
+      <h1 class="d-none">Categories</h1>
+      <div class="category">
+        <h3>Pastries</h3>
+        <span>Different types of pastries</span>
+        <div id="category-carousel" class="carousel slide carousel-multi-item">
+          <a class="carousel-control-prev" href="#category-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#category-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Pastry 1</h4>
+                      <p class="card-text">A delicious dessert of red velvet sponge layered with cream</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Pastry 2</h4>
+                      <p class="card-text">A delicious dessert of red velvet sponge layered with cream</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Pastry 3</h4>
+                      <p class="card-text">A delicious dessert of red velvet sponge layered with cream</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Pastry 4</h4>
+                      <p class="card-text">A delicious dessert of red velvet sponge layered with cream</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Pastry 5</h4>
+                      <p class="card-text">A delicious dessert of red velvet sponge layered with cream</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/red-velvet-cake-2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Pastry 6</h4>
+                      <p class="card-text">A delicious dessert of red velvet sponge layered with cream</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="category">
+        <h3>Breads</h3>
+        <span>Different types of breads</span>
+        <div id="category-carousel-2" class="carousel slide carousel-multi-item">
+          <a class="carousel-control-prev" href="#category-carousel-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#category-carousel-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/chocolate-croissant.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Croissant 1</h4>
+                      <p class="card-text">A croissant is a buttery, crescent-shaped French pastry</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/chocolate-croissant.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Croissant 2</h4>
+                      <p class="card-text">A croissant is a buttery, crescent-shaped French pastry</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/chocolate-croissant.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Croissant 3</h4>
+                      <p class="card-text">A croissant is a buttery, crescent-shaped French pastry</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/chocolate-croissant.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Croissant 4</h4>
+                      <p class="card-text">A croissant is a buttery, crescent-shaped French pastry</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/chocolate-croissant.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Croissant 5</h4>
+                      <p class="card-text">A croissant is a buttery, crescent-shaped French pastry</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/chocolate-croissant.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Croissant 6</h4>
+                      <p class="card-text">A croissant is a buttery, crescent-shaped French pastry</p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="category">
+        <h3>Donuts</h3>
+        <span>Different types of donuts</span>
+        <div id="category-carousel-3" class="carousel slide carousel-multi-item">
+          <a class="carousel-control-prev" href="#category-carousel-3" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#category-carousel-3" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/donuts.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Donuts 1</h4>
+                      <p class="card-text">A donut is a delicious, deep-fried breakfast treat. </p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/donuts.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Donuts 2</h4>
+                      <p class="card-text">A donut is a delicious, deep-fried breakfast treat. </p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/donuts.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Donuts 3</h4>
+                      <p class="card-text">A donut is a delicious, deep-fried breakfast treat. </p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/donuts.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Donuts 4</h4>
+                      <p class="card-text">A donut is a delicious, deep-fried breakfast treat. </p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/donuts.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Donuts 5</h4>
+                      <p class="card-text">A donut is a delicious, deep-fried breakfast treat. </p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/donuts.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Donuts 6</h4>
+                      <p class="card-text">A donut is a delicious, deep-fried breakfast treat. </p>
+                      <a class="btn btn-red">Buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer font-small pt-4">
+    <div class="container-fluid text-center text-md-center col-md-offset-1">
+      <div class="row">
+        <div class="col-md-5 mt-md-0 mt-3">
+          <h5 class="logo"> &#127874;BakeShop</h5>
+          <p>BakeShop is a brand new online platform to buy a wide variety of cakes, break, donuts and other confectionaries!</p>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3 text-md-left">
+          <h5 class="text-uppercase">Categories</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Cakes</a>
+            </li>
+            <li>
+              <a href="#!">Pastries</a>
+            </li>
+            <li>
+              <a href="#!">Bread</a>
+            </li>
+            <li>
+              <a href="#!">Donuts</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3 text-md-left">
+          <h5 class="text-uppercase">Navigation</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Home</a>
+            </li>
+            <li>
+              <a href="#!">Sign In</a>
+            </li>
+            <li>
+              <a href="#!">Sign Up</a>
+            </li>
+            <li>
+              <a href="#!">FAQ</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#">BakeShop</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

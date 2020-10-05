@@ -1,0 +1,187 @@
+@font-face {
+  font-family: GothamBold;
+  src: url(../fonts/Gotham-Bold.otf); }
+@font-face {
+  font-family: GothamRoundedLight;
+  src: url(../fonts/Gotham-Bold.otf); }
+body {
+  background-color: #f6f6f6;
+  font-family: "Helvetica Neue Light", "Helvetica Neue Medium", "Helvetica Neue Bold"; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "GothamBold", "GothamRoundedLight";
+  color: #888; }
+
+.btn-red {
+  color: #fff;
+  background-color: #d35266;
+  border-color: #d35266; }
+
+footer {
+  background-color: white; }
+  footer p,
+  footer a {
+    color: grey; }
+
+a:hover {
+  color: #d35266;
+  text-decoration: none; }
+
+.navbar {
+  justify-content: center;
+  align-items: center;
+  background-color: #383838;
+  width: 100%;
+  padding: 5px; }
+  .navbar .nav-items {
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .navbar .nav-items .material-icons {
+      color: #888;
+      font-size: 0.8rem;
+      line-height: 0.8rem; }
+    .navbar .nav-items div {
+      line-height: 0.8rem;
+      font-size: 0.8rem;
+      padding: 1% 2%; }
+      .navbar .nav-items div a {
+        white-space: nowrap;
+        font-family: "GothamBold", "GothamRoundedLight";
+        color: #888; }
+      .navbar .nav-items div a:hover {
+        text-decoration: none;
+        color: #d35266; }
+  .navbar .logo {
+    color: #fff;
+    font-size: 1.4rem; }
+  .navbar .navbar-nav {
+    flex-direction: row; }
+  .navbar li {
+    padding-left: 5px;
+    padding-right: 5px; }
+
+.ad {
+  display: none;
+  border: none;
+  border-radius: 4px;
+  font-family: "GothamBold", "GothamRoundedLight";
+  color: #fff;
+  background-color: #d35266;
+  padding: 7px; }
+
+.main-banner {
+  padding: 5% 0;
+  background-color: #d35266;
+  font-size: 0.8rem; }
+  .main-banner h1 {
+    color: #fff;
+    font-size: 4em; }
+  .main-banner h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: capitalize; }
+  .main-banner button {
+    background-color: #383838;
+    color: #888;
+    padding: 0.25rem;
+    border: none;
+    height: calc(1.5em + 0.75rem + 2px); }
+  .main-banner .dropdown-toggle::after {
+    color: green; }
+  .main-banner .form-control {
+    font-size: 1.2rem;
+    border-radius: 0;
+    border: none;
+    padding: 5px; }
+  .main-banner .form-inline {
+    width: 60%; }
+
+.banner-heading {
+  padding: 3% 0; }
+
+.main-heading {
+  width: 70%;
+  margin: 0 auto;
+  color: #888; }
+
+#main-carousel {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1% 0; }
+
+.hot-ads {
+  background-color: #fff;
+  width: 100%;
+  padding: 1% 0; }
+  .hot-ads .hot-ad-content h2 {
+    color: #d35266; }
+  .hot-ads .grey-field {
+    color: #888;
+    font-weight: bold; }
+  .hot-ads .banner-purchase {
+    margin-top: 5%; }
+  .hot-ads .h2 {
+    font-size: 0.6em; }
+  .hot-ads .hot-ad {
+    flex-direction: column;
+    align-items: center; }
+  .hot-ads .carousel img {
+    height: 300px;
+    width: 300px; }
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: auto; }
+
+.carousel-control-prev {
+  left: -40px; }
+
+.carousel-control-next {
+  right: -40px; }
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  border-radius: 50%; }
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
+
+.categories {
+  width: 60%;
+  padding: 1%;
+  margin: 0 auto; }
+
+.category {
+  margin: 5% 0; }
+
+/*
+    ----------------------
+      Media Query 768px
+    ----------------------
+*/
+@media (min-width: 768px) {
+  .navbar div {
+    padding: 1% 2%; }
+  .navbar .nav-items {
+    width: 60%; }
+
+  .ad {
+    display: block; }
+
+  .hot-ads .hot-ad {
+    flex-direction: row; }
+  .hot-ads .hot-ad-content {
+    padding: 0 4%; }
+
+  .page-footer .container-fluid {
+    width: 75%; } }
+
+/*# sourceMappingURL=style.css.map */
