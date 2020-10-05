@@ -82,7 +82,7 @@ a:hover {
     font-size: 2em; }
   .main-banner h2 {
     color: #fff;
-    font-size: 1em;
+    font-size: 1.2em;
     text-transform: capitalize; }
   .main-banner button {
     background-color: #383838;
@@ -93,7 +93,7 @@ a:hover {
   .main-banner .dropdown-toggle::after {
     color: green; }
   .main-banner .form-control {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     border-radius: 0;
     border: none;
     padding: 5px; }
@@ -114,7 +114,7 @@ a:hover {
   font-size: 1.1rem; }
 
 .results {
-  margin: 0 auto;
+  width: 80%;
   padding: 3% 1%; }
 
 .result-message {
