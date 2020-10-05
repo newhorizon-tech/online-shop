@@ -13,7 +13,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "GothamBold", "GothamRoundedLight"; }
+  font-family: "GothamBold", "GothamRoundedLight";
+  color: #888; }
 
 .btn-red {
   color: #fff;
@@ -178,6 +179,9 @@ a:hover {
   .hot-ads .hot-ad {
     flex-direction: row; }
   .hot-ads .hot-ad-content {
-    padding: 0 4%; } }
+    padding: 0 4%; }
+
+  .page-footer .container-fluid {
+    width: 75%; } }
 
 /*# sourceMappingURL=style.css.map */

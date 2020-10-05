@@ -13,7 +13,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "GothamBold", "GothamRoundedLight"; }
+  font-family: "GothamBold", "GothamRoundedLight";
+  color: #888; }
 
 .btn-red {
   color: #fff;
@@ -180,6 +181,9 @@ a:hover {
     .result-items .card-body {
       padding: 3%; }
     .result-items .card-text {
-      display: block; } }
+      display: block; }
+
+  .page-footer .container-fluid {
+    width: 75%; } }
 
 /*# sourceMappingURL=search.css.map */

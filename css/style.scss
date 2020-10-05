@@ -23,7 +23,10 @@ h1,
 h2,
 h3,
 h4,
-h5 { font-family: $gotham; }
+h5 {
+  font-family: $gotham;
+  color: $grey;
+}
 
 .btn-red {
   color: #fff;
@@ -268,6 +271,12 @@ a:hover {
 
     .hot-ad-content {
       padding: 0 4%;
+    }
+  }
+
+  .page-footer {
+    .container-fluid {
+      width: 75%;
     }
   }
 }
