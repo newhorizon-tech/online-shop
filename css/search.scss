@@ -174,12 +174,17 @@ a:hover {
 // Main Content
 
 .results {
-  width: 80%;
+  width: 85%;
+  margin: 0 auto;
   padding: 3% 1%;
 }
 
 .result-message {
   font-size: 0.8rem;
+}
+
+.card-body {
+  flex-direction: row;
 }
 
 .card-text {
